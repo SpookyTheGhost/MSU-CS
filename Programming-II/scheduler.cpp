@@ -41,7 +41,7 @@ void Scheduler::load_jobs(string file) { // this works
 } // ends load_jobs
 
 bool Scheduler::finished() {
-    return ((arrivals.empty()) && (process.empty()));
+    return ( arrivals.empty() && process.empty() );
 }
 
 void Scheduler::round_robin() {

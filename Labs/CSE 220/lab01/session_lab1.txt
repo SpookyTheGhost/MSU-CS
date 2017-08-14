@@ -1,0 +1,137 @@
+Script started on Tue 12 Jan 2016 03:31:35 PM EST
+<129 brockman:~ >pwd
+/user/zhangke8
+<130 brockman:~ >ls
+activities  cse220   Desktop	Downloads  NetBeansProjects  Pictures  session_lab1.txt  Videos
+bin	    CSE 231  Documents	Music	   NewFolder	     Public    Templates
+<131 brockman:~ >ls -a
+.	    CSE 231	 .fvwm2rc	  .idlerc	   .mailtool-init    .octave_hist	     .pulse-cookie     .w2kprofile.V2
+..	    .cshrc	 .fvwmrc	  .imaprc	   .mission-control  .openwin-init	     .purple	       .Xdefaults
+activities  .dbus	 .gconf		  .java		   .mozilla	     .openwin-menu	     .recently-used    .xinitrc
+.adobe	    Desktop	 .gnome2	  .kde		   .msgsrc	     .openwin-menu-cps	     session_lab1.txt  .xmodmaprc
+.aliases    Documents	 .gnome2_private  .lesshst	   Music	     .openwin-menu-programs  .snapshot	       .xsession-errors
+.aup	    Downloads	 .gstreamer-0.10  .local	   .mwmrc	     .OWdefaults	     Templates	       .xsession-errors.old
+bin	    .dtprofile	 .gtk-bookmarks   .login	   .netbeans	     .personal		     .thumbnails
+.cache	    .emacs	 .gvfs		  .login-personal  NetBeansProjects  Pictures		     .twmrc
+.config     .exrc	 .history	  .macromedia	   NewFolder	     Public		     Videos
+cse220	    .fontconfig  .ICEauthority	  .mailrc	   .nv		     .pulse		     .vnc
+<132 brockman:~ >touch myFirstFle[K[Kile
+<133 brockman:~ >ls -l
+total 56
+drwx------  2 zhangke8 gnats 4096 Jan 12 15:27 activities
+drwx--x--x  2 zhangke8 gnats 4096 Jan  3  2013 bin
+drwx------  2 zhangke8 gnats 4096 Jan 12 15:20 cse220
+drwxr-xr-x  4 zhangke8 gnats 4096 Jan 15  2014 CSE 231
+drwxr-xr-x  2 zhangke8 gnats 4096 Apr 16  2014 Desktop
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Documents
+drwxr-xr-x  2 zhangke8 gnats 4096 Apr 25  2014 Downloads
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Music
+-rw-------  1 zhangke8 gnats    0 Jan 12 15:32 myFirstFile
+drwxr-xr-x 24 zhangke8 gnats 4096 Apr 17  2014 NetBeansProjects
+drwxr-xr-x  2 zhangke8 gnats 4096 Mar 13  2014 NewFolder
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Pictures
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Public
+-rw-------  1 zhangke8 gnats    0 Jan 12 15:31 session_lab1.txt
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Templates
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Videos
+<134 brockman:~ >touch myFirstFile
+<135 brockman:~ >ls -l
+total 56
+drwx------  2 zhangke8 gnats 4096 Jan 12 15:27 activities
+drwx--x--x  2 zhangke8 gnats 4096 Jan  3  2013 bin
+drwx------  2 zhangke8 gnats 4096 Jan 12 15:20 cse220
+drwxr-xr-x  4 zhangke8 gnats 4096 Jan 15  2014 CSE 231
+drwxr-xr-x  2 zhangke8 gnats 4096 Apr 16  2014 Desktop
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Documents
+drwxr-xr-x  2 zhangke8 gnats 4096 Apr 25  2014 Downloads
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Music
+-rw-------  1 zhangke8 gnats    0 Jan 12 15:32 myFirstFile
+drwxr-xr-x 24 zhangke8 gnats 4096 Apr 17  2014 NetBeansProjects
+drwxr-xr-x  2 zhangke8 gnats 4096 Mar 13  2014 NewFolder
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Pictures
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Public
+-rw-------  1 zhangke8 gnats    0 Jan 12 15:31 session_lab1.txt
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Templates
+drwxr-xr-x  2 zhangke8 gnats 4096 Feb 24  2014 Videos
+<136 brockman:~ >rm myFirstFile
+rm: remove regular empty file ‘myFirstFile’? y
+<137 brockman:~ >mkdir cse220
+mkdir: cannot create directory ‘cse220’: File exists
+<138 brockman:~ >ls
+activities  cse220   Desktop	Downloads  NetBeansProjects  Pictures  session_lab1.txt  Videos
+bin	    CSE 231  Documents	Music	   NewFolder	     Public    Templates
+<139 brockman:~ >mkdir activities
+mkdir: cannot create directory ‘activities’: File exists
+<140 brockman:~ >cd activities
+<141 brockman:~/activities >pwd
+/user/zhangke8/activities
+<142 brockman:~/activities >touch mySecondFile
+<143 brockman:~/activities >cd summerActivities
+summerActivities: No such file or directory.
+<144 brockman:~/activities >cd ..
+<145 brockman:~ >pwd
+/user/zhangke8
+<146 brockman:~ >cd .
+<147 brockman:~ >pwd
+/user/zhangke8
+<148 brockman:~ >rmdir activities
+rmdir: failed to remove ‘activities’: Directory not empty
+<149 brockman:~ >rm -r
+rm: missing operand
+Try 'rm --help' for more information.
+<150 brockman:~ >cd ~/cse220
+<151 brockman:~/cse220 >rm activities -r
+rm: cannot remove ‘activities’: No such file or directory
+<152 brockman:~/cse220 >rmdir [K[K[K[K[Krm -r activities
+rm: cannot remove ‘activities’: No such file or directory
+<153 brockman:~/cse220 >ls
+<154 brockman:~/cse220 >cd ..
+<155 brockman:~ >ls
+activities  cse220   Desktop	Downloads  NetBeansProjects  Pictures  session_lab1.txt  Videos
+bin	    CSE 231  Documents	Music	   NewFolder	     Public    Templates
+<156 brockman:~ >rm -r activities
+rm: descend into directory ‘activities’? y
+rm: remove regular empty file ‘activities/mySecondFile’? y
+rm: remove directory ‘activities’? y
+<157 brockman:~ >ls
+bin	CSE 231  Documents  Music	      NewFolder  Public		   Templates
+cse220	Desktop  Downloads  NetBeansProjects  Pictures	 session_lab1.txt  Videos
+<158 brockman:~ >cd ~/cse220
+<159 brockman:~/cse220 >pwd
+/user/zhangke8/cse220
+<160 brockman:~/cse220 >cd ../cse220
+<161 brockman:~/cse220 >cd ../cse220/.././cse220
+<162 brockman:~/cse220 >ls /user/cse220/labs
+HelloWorld.c  Infinite.c
+<163 brockman:~/cse220 >cp /user/cse220/labs/HellowWord.c
+cp: missing destination file operand after ‘/user/cse220/labs/HellowWord.c’
+Try 'cp --help' for more information.
+<164 brockman:~/cse220 >cp .user[K[K[K[K[K/user/cse220/labs/HellowWorld.c[PWorld.c
+cp: missing destination file operand after ‘/user/cse220/labs/HelloWorld.c’
+Try 'cp --help' for more information.
+<165 brockman:~/cse220 >cp /user/cse20[K20/labs/HelloWorld.c .
+<166 brockman:~/cse220 >head -5 [K[K[K[K[K[Kmv Hellow[KWorld.c MyHellow[KWorld.c
+<167 brockman:~/cse220 >head -5 MyHelloWorld.c
+/* Hello World program */
+#include<stdio.h>
+
+int main() {
+    printf("Hello World!!!\n");
+<168 brockman:~/cse220 >tail -7 MyHellow[KWorld.c
+/* Hello World program */
+#include<stdio.h>
+
+int main() {
+    printf("Hello World!!!\n");
+	return 0;
+}<169 brockman:~/cse220 >cat MyHelloWorld.c
+/* Hello World program */
+#include<stdio.h>
+
+int main() {
+    printf("Hello World!!!\n");
+	return 0;
+}<170 brockman:~/cse220 >exit
+exit
+
+Script done on Tue 12 Jan 2016 03:44:10 PM EST

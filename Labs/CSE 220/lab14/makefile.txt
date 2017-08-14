@@ -1,0 +1,7 @@
+capacitorInfo: capacitor.o capacitorsInfo.o
+    gcc -o capacitorInfo capacitor.o capacitorsInfo.o
+capacitor.o: capacitor.h capacitorsInfo.c
+    gcc -c capacitor.c
+
+capacitorsInfo.o: capacitor.c capacitor.h
+    gcc -c capacitor.c

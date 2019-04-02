@@ -44,6 +44,7 @@ bool Knapsack::add(Package p) {
         }
         data_[size_] = p; // add package to knapsack
         size_++; // update size
+	weight(); // update weight
         return true;
     }
 } // end add method
